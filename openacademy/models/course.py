@@ -12,7 +12,7 @@ class Course(models.Model):
     responsible_id = fields.Many2one('res.users',
     ondelete='set null', string="Responsible", index=True)
 
-    class Session(models.Model):
+class Session(models.Model):
     _name = 'openacademy.session'
     _description = "OpenAcademy Sessions"
 
